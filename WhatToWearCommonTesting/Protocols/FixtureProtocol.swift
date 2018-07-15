@@ -4,14 +4,14 @@ import WhatToWearCommonCore
 public protocol FixtureProtocol: RawRepresentable where RawValue == String {
     associatedtype EnclosingType: Decodable
     
-    func fixtureData(for bundle: Bundle) -> Data
-    func object(for bundle: Bundle) -> EnclosingType
+    func fixtureData(for bundle: Bundle) throws -> Data
+    func object(for bundle: Bundle) throws -> EnclosingType
 }
 
 public extension FixtureProtocol {
     // MARK: objects
     public func object(for bundle: Bundle) throws -> EnclosingType {
-        let data = fixtureData(for: bundle)
+        let data = try fixtureData(for: bundle)
         
         return try JSONDecoder.wtwDecoder().decode(EnclosingType.self, from: data)
     }

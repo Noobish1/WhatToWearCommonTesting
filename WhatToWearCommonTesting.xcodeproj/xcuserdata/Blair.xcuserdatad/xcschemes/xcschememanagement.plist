@@ -4,10 +4,23 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>WhatToWearCommonTesting.xcscheme</key>
+		<key>WhatToWearCommonTesting.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>75B70FE920FB2C51007242EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>75B70FF220FB2C52007242EF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
