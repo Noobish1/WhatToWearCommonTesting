@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		75B70FF420FB2C52007242EF /* WhatToWearCommonTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B70FEA20FB2C51007242EF /* WhatToWearCommonTesting.framework */; };
-		75B70FF920FB2C52007242EF /* WhatToWearCommonTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B70FF820FB2C52007242EF /* WhatToWearCommonTestingTests.swift */; };
 		75B70FFB20FB2C52007242EF /* WhatToWearCommonTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 75B70FED20FB2C51007242EF /* WhatToWearCommonTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75B7101120FB2F71007242EF /* FixtureProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7100F20FB2F70007242EF /* FixtureProtocol.swift */; };
+		75B7101220FB2F71007242EF /* Fixturable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7101020FB2F71007242EF /* Fixturable.swift */; };
+		8CAF4397A8C692E2FAA3A22B /* Pods_WhatToWearCommonTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC224F3E7D57573F905FD46 /* Pods_WhatToWearCommonTesting.framework */; };
+		9036AAEEFB1D22AE49CDDC02 /* Pods_WhatToWearCommonTestingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A4021FFD58FDEDC0D11E4A /* Pods_WhatToWearCommonTestingTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0853610FA96CD9F053E77CCE /* Pods-WhatToWearCommonTestingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonTestingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonTestingTests/Pods-WhatToWearCommonTestingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E2BD4A6486AD72943BACF22 /* Pods-WhatToWearCommonTesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonTesting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonTesting/Pods-WhatToWearCommonTesting.debug.xcconfig"; sourceTree = "<group>"; };
+		58CC347F73C26D37372D9C25 /* Pods-WhatToWearCommonTestingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonTestingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonTestingTests/Pods-WhatToWearCommonTestingTests.release.xcconfig"; sourceTree = "<group>"; };
 		75B70FEA20FB2C51007242EF /* WhatToWearCommonTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B70FED20FB2C51007242EF /* WhatToWearCommonTesting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatToWearCommonTesting.h; sourceTree = "<group>"; };
 		75B70FEE20FB2C51007242EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75B70FF320FB2C52007242EF /* WhatToWearCommonTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75B70FF820FB2C52007242EF /* WhatToWearCommonTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToWearCommonTestingTests.swift; sourceTree = "<group>"; };
 		75B70FFA20FB2C52007242EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75B7100620FB2D21007242EF /* WhatToWearCommonCore.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = WhatToWearCommonCore.podspec; sourceTree = "<group>"; };
+		75B7100720FB2D21007242EF /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		75B7100820FB2D21007242EF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		75B7100920FB2D21007242EF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		75B7100A20FB2D22007242EF /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		75B7100B20FB2E3A007242EF /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		75B7100F20FB2F70007242EF /* FixtureProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureProtocol.swift; sourceTree = "<group>"; };
+		75B7101020FB2F71007242EF /* Fixturable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fixturable.swift; sourceTree = "<group>"; };
+		9A187584C6BD0B8C45608A5F /* Pods-WhatToWearCommonTesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonTesting.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonTesting/Pods-WhatToWearCommonTesting.release.xcconfig"; sourceTree = "<group>"; };
+		C3A4021FFD58FDEDC0D11E4A /* Pods_WhatToWearCommonTestingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonTestingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC224F3E7D57573F905FD46 /* Pods_WhatToWearCommonTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatToWearCommonTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CAF4397A8C692E2FAA3A22B /* Pods_WhatToWearCommonTesting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +61,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B70FF420FB2C52007242EF /* WhatToWearCommonTesting.framework in Frameworks */,
+				9036AAEEFB1D22AE49CDDC02 /* Pods_WhatToWearCommonTestingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A21DAC6031AECB54D0CFC4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDC224F3E7D57573F905FD46 /* Pods_WhatToWearCommonTesting.framework */,
+				C3A4021FFD58FDEDC0D11E4A /* Pods_WhatToWearCommonTestingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E724B216330DB3A370B5B73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E2BD4A6486AD72943BACF22 /* Pods-WhatToWearCommonTesting.debug.xcconfig */,
+				9A187584C6BD0B8C45608A5F /* Pods-WhatToWearCommonTesting.release.xcconfig */,
+				0853610FA96CD9F053E77CCE /* Pods-WhatToWearCommonTestingTests.debug.xcconfig */,
+				58CC347F73C26D37372D9C25 /* Pods-WhatToWearCommonTestingTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		75B70FE020FB2C51007242EF = {
 			isa = PBXGroup;
 			children = (
+				75B7100B20FB2E3A007242EF /* Podfile */,
+				75B7100920FB2D21007242EF /* .gitignore */,
+				75B7100820FB2D21007242EF /* .swiftlint.yml */,
+				75B7100A20FB2D22007242EF /* Gemfile */,
+				75B7100720FB2D21007242EF /* Package.swift */,
+				75B7100620FB2D21007242EF /* WhatToWearCommonCore.podspec */,
 				75B70FEC20FB2C51007242EF /* WhatToWearCommonTesting */,
 				75B70FF720FB2C52007242EF /* WhatToWearCommonTestingTests */,
 				75B70FEB20FB2C51007242EF /* Products */,
+				2E724B216330DB3A370B5B73 /* Pods */,
+				0A21DAC6031AECB54D0CFC4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,8 +117,8 @@
 		75B70FEC20FB2C51007242EF /* WhatToWearCommonTesting */ = {
 			isa = PBXGroup;
 			children = (
-				75B70FED20FB2C51007242EF /* WhatToWearCommonTesting.h */,
-				75B70FEE20FB2C51007242EF /* Info.plist */,
+				75B7100E20FB2EDD007242EF /* Protocols */,
+				75B7100420FB2C9D007242EF /* Supporting Files */,
 			);
 			path = WhatToWearCommonTesting;
 			sourceTree = "<group>";
@@ -80,10 +126,35 @@
 		75B70FF720FB2C52007242EF /* WhatToWearCommonTestingTests */ = {
 			isa = PBXGroup;
 			children = (
-				75B70FF820FB2C52007242EF /* WhatToWearCommonTestingTests.swift */,
-				75B70FFA20FB2C52007242EF /* Info.plist */,
+				75B7100520FB2CBB007242EF /* Supporting Files */,
 			);
 			path = WhatToWearCommonTestingTests;
+			sourceTree = "<group>";
+		};
+		75B7100420FB2C9D007242EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75B70FED20FB2C51007242EF /* WhatToWearCommonTesting.h */,
+				75B70FEE20FB2C51007242EF /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75B7100520FB2CBB007242EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75B70FFA20FB2C52007242EF /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75B7100E20FB2EDD007242EF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				75B7101020FB2F71007242EF /* Fixturable.swift */,
+				75B7100F20FB2F70007242EF /* FixtureProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +175,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75B70FFE20FB2C52007242EF /* Build configuration list for PBXNativeTarget "WhatToWearCommonTesting" */;
 			buildPhases = (
+				6B0FA6C66BEF799007168A34 /* [CP] Check Pods Manifest.lock */,
 				75B70FE520FB2C51007242EF /* Sources */,
 				75B70FE620FB2C51007242EF /* Frameworks */,
 				75B70FE720FB2C51007242EF /* Headers */,
 				75B70FE820FB2C51007242EF /* Resources */,
+				75B7100C20FB2EAC007242EF /* SwiftLint autocorrect */,
+				75B7100D20FB2EB9007242EF /* SwiftLint lint */,
 			);
 			buildRules = (
 			);
@@ -122,9 +196,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75B7100120FB2C52007242EF /* Build configuration list for PBXNativeTarget "WhatToWearCommonTestingTests" */;
 			buildPhases = (
+				AD1057C50974A2ABD8C6A065 /* [CP] Check Pods Manifest.lock */,
 				75B70FEF20FB2C52007242EF /* Sources */,
 				75B70FF020FB2C52007242EF /* Frameworks */,
 				75B70FF120FB2C52007242EF /* Resources */,
+				DB0E58C7468CA858F6A797A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +224,7 @@
 				TargetAttributes = {
 					75B70FE920FB2C51007242EF = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 					75B70FF220FB2C52007242EF = {
 						CreatedOnToolsVersion = 9.4;
@@ -189,11 +266,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6B0FA6C66BEF799007168A34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatToWearCommonTesting-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75B7100C20FB2EAC007242EF /* SwiftLint autocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint autocorrect";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect --quiet";
+		};
+		75B7100D20FB2EB9007242EF /* SwiftLint lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" lint --quiet";
+		};
+		AD1057C50974A2ABD8C6A065 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatToWearCommonTestingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB0E58C7468CA858F6A797A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonTestingTests/Pods-WhatToWearCommonTestingTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/WhatToWearCommonCore/WhatToWearCommonCore.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WhatToWearCommonCore.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonTestingTests/Pods-WhatToWearCommonTestingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75B70FE520FB2C51007242EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B7101120FB2F71007242EF /* FixtureProtocol.swift in Sources */,
+				75B7101220FB2F71007242EF /* Fixturable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +371,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75B70FF920FB2C52007242EF /* WhatToWearCommonTestingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +507,9 @@
 		};
 		75B70FFF20FB2C52007242EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E2BD4A6486AD72943BACF22 /* Pods-WhatToWearCommonTesting.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,8 +517,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WhatToWearCommonTesting/Info.plist;
+				INFOPLIST_FILE = "WhatToWearCommonTesting/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +528,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.noobish1.WhatToWearCommonTesting;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,7 +536,9 @@
 		};
 		75B7100020FB2C52007242EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A187584C6BD0B8C45608A5F /* Pods-WhatToWearCommonTesting.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -371,8 +546,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WhatToWearCommonTesting/Info.plist;
+				INFOPLIST_FILE = "WhatToWearCommonTesting/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,10 +564,11 @@
 		};
 		75B7100220FB2C52007242EF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0853610FA96CD9F053E77CCE /* Pods-WhatToWearCommonTestingTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
-				INFOPLIST_FILE = WhatToWearCommonTestingTests/Info.plist;
+				INFOPLIST_FILE = "WhatToWearCommonTestingTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -406,10 +583,11 @@
 		};
 		75B7100320FB2C52007242EF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58CC347F73C26D37372D9C25 /* Pods-WhatToWearCommonTestingTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JE2245GFQ;
-				INFOPLIST_FILE = WhatToWearCommonTestingTests/Info.plist;
+				INFOPLIST_FILE = "WhatToWearCommonTestingTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
