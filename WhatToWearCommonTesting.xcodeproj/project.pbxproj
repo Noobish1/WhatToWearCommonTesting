@@ -36,7 +36,7 @@
 		75B70FEE20FB2C51007242EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75B70FF320FB2C52007242EF /* WhatToWearCommonTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B70FFA20FB2C52007242EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75B7100620FB2D21007242EF /* WhatToWearCommonCore.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = WhatToWearCommonCore.podspec; sourceTree = "<group>"; };
+		75B7100620FB2D21007242EF /* WhatToWearCommonTesting.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = WhatToWearCommonTesting.podspec; sourceTree = "<group>"; };
 		75B7100720FB2D21007242EF /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		75B7100820FB2D21007242EF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		75B7100920FB2D21007242EF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 				75B7100820FB2D21007242EF /* .swiftlint.yml */,
 				75B7100A20FB2D22007242EF /* Gemfile */,
 				75B7100720FB2D21007242EF /* Package.swift */,
-				75B7100620FB2D21007242EF /* WhatToWearCommonCore.podspec */,
+				75B7100620FB2D21007242EF /* WhatToWearCommonTesting.podspec */,
 				75B70FEC20FB2C51007242EF /* WhatToWearCommonTesting */,
 				75B70FF720FB2C52007242EF /* WhatToWearCommonTestingTests */,
 				75B70FEB20FB2C51007242EF /* Products */,
