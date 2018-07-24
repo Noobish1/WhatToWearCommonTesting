@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		759E692E210703E0000F7F8F /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E692D210703E0000F7F8F /* Faker.swift */; };
+		759E6933210705A2000F7F8F /* FakerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E6932210705A2000F7F8F /* FakerSpec.swift */; };
 		75B70FF420FB2C52007242EF /* WhatToWearCommonTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B70FEA20FB2C51007242EF /* WhatToWearCommonTesting.framework */; };
 		75B70FFB20FB2C52007242EF /* WhatToWearCommonTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 75B70FED20FB2C51007242EF /* WhatToWearCommonTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75B7101120FB2F71007242EF /* FixtureProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7100F20FB2F70007242EF /* FixtureProtocol.swift */; };
@@ -31,12 +33,14 @@
 		0853610FA96CD9F053E77CCE /* Pods-WhatToWearCommonTestingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonTestingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonTestingTests/Pods-WhatToWearCommonTestingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E2BD4A6486AD72943BACF22 /* Pods-WhatToWearCommonTesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonTesting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonTesting/Pods-WhatToWearCommonTesting.debug.xcconfig"; sourceTree = "<group>"; };
 		58CC347F73C26D37372D9C25 /* Pods-WhatToWearCommonTestingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonTestingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonTestingTests/Pods-WhatToWearCommonTestingTests.release.xcconfig"; sourceTree = "<group>"; };
+		759E692D210703E0000F7F8F /* Faker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faker.swift; sourceTree = "<group>"; };
+		759E6932210705A2000F7F8F /* FakerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakerSpec.swift; sourceTree = "<group>"; };
 		75B70FEA20FB2C51007242EF /* WhatToWearCommonTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B70FED20FB2C51007242EF /* WhatToWearCommonTesting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatToWearCommonTesting.h; sourceTree = "<group>"; };
 		75B70FEE20FB2C51007242EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75B70FF320FB2C52007242EF /* WhatToWearCommonTestingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatToWearCommonTestingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B70FFA20FB2C52007242EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75B7100620FB2D21007242EF /* WhatToWearCommonTesting.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = WhatToWearCommonTesting.podspec; sourceTree = "<group>"; };
+		75B7100620FB2D21007242EF /* WhatToWearCommonTesting.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = WhatToWearCommonTesting.podspec; sourceTree = "<group>"; };
 		75B7100720FB2D21007242EF /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		75B7100820FB2D21007242EF /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		75B7100920FB2D21007242EF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -92,6 +96,46 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		759E692B21070391000F7F8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				759E692C210703D2000F7F8F /* Fakery */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		759E692C210703D2000F7F8F /* Fakery */ = {
+			isa = PBXGroup;
+			children = (
+				759E692D210703E0000F7F8F /* Faker.swift */,
+			);
+			path = Fakery;
+			sourceTree = "<group>";
+		};
+		759E692F21070405000F7F8F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				75B7101420FB321A007242EF /* FixtureProtocolSpec.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		759E69302107040B000F7F8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				759E693121070411000F7F8F /* Fakery */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		759E693121070411000F7F8F /* Fakery */ = {
+			isa = PBXGroup;
+			children = (
+				759E6932210705A2000F7F8F /* FakerSpec.swift */,
+			);
+			path = Fakery;
+			sourceTree = "<group>";
+		};
 		75B70FE020FB2C51007242EF = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +165,7 @@
 		75B70FEC20FB2C51007242EF /* WhatToWearCommonTesting */ = {
 			isa = PBXGroup;
 			children = (
+				759E692B21070391000F7F8F /* Extensions */,
 				75B7100E20FB2EDD007242EF /* Protocols */,
 				75B7100420FB2C9D007242EF /* Supporting Files */,
 			);
@@ -166,7 +211,8 @@
 		75B7101320FB3208007242EF /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				75B7101420FB321A007242EF /* FixtureProtocolSpec.swift */,
+				759E69302107040B000F7F8F /* Extensions */,
+				759E692F21070405000F7F8F /* Protocols */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -403,6 +449,7 @@
 			files = (
 				75B7101120FB2F71007242EF /* FixtureProtocol.swift in Sources */,
 				75B7101220FB2F71007242EF /* Fixturable.swift in Sources */,
+				759E692E210703E0000F7F8F /* Faker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759E6933210705A2000F7F8F /* FakerSpec.swift in Sources */,
 				75B7101520FB321A007242EF /* FixtureProtocolSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

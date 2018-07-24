@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'WhatToWearCommonTesting' do
     pod 'WhatToWearCommonCore', :git => 'git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git', :tag => '1.5.0'
+    pod 'Fakery', '3.3.0'
     
     # Debug pods
     pod 'SwiftLint', '0.26.0', :configurations => 'Debug'
