@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2384142CDF5DE7A4E5860E19 /* Pods_WhatToWearCommonTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6097F81BF67239B195BB8A8 /* Pods_WhatToWearCommonTesting.framework */; };
 		2384BADE279EA9C1A637CE0F /* Pods_WhatToWearCommonTestingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42B813936B449A29D130591 /* Pods_WhatToWearCommonTestingTests.framework */; };
-		759E692E210703E0000F7F8F /* Faker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E692D210703E0000F7F8F /* Faker.swift */; };
-		759E6933210705A2000F7F8F /* FakerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759E6932210705A2000F7F8F /* FakerSpec.swift */; };
 		75B70FF420FB2C52007242EF /* WhatToWearCommonTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B70FEA20FB2C51007242EF /* WhatToWearCommonTesting.framework */; };
 		75B70FFB20FB2C52007242EF /* WhatToWearCommonTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = 75B70FED20FB2C51007242EF /* WhatToWearCommonTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		75B7101120FB2F71007242EF /* FixtureProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B7100F20FB2F70007242EF /* FixtureProtocol.swift */; };
@@ -32,8 +30,6 @@
 /* Begin PBXFileReference section */
 		2C3DD600A825AF7212698098 /* Pods-WhatToWearCommonTestingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonTestingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonTestingTests/Pods-WhatToWearCommonTestingTests.release.xcconfig"; sourceTree = "<group>"; };
 		59B012D21D223916F8DE8F64 /* Pods-WhatToWearCommonTesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatToWearCommonTesting.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhatToWearCommonTesting/Pods-WhatToWearCommonTesting.release.xcconfig"; sourceTree = "<group>"; };
-		759E692D210703E0000F7F8F /* Faker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Faker.swift; sourceTree = "<group>"; };
-		759E6932210705A2000F7F8F /* FakerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakerSpec.swift; sourceTree = "<group>"; };
 		75B70FEA20FB2C51007242EF /* WhatToWearCommonTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhatToWearCommonTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B70FED20FB2C51007242EF /* WhatToWearCommonTesting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhatToWearCommonTesting.h; sourceTree = "<group>"; };
 		75B70FEE20FB2C51007242EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,44 +83,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		759E692B21070391000F7F8F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				759E692C210703D2000F7F8F /* Fakery */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		759E692C210703D2000F7F8F /* Fakery */ = {
-			isa = PBXGroup;
-			children = (
-				759E692D210703E0000F7F8F /* Faker.swift */,
-			);
-			path = Fakery;
-			sourceTree = "<group>";
-		};
 		759E692F21070405000F7F8F /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				75B7101420FB321A007242EF /* FixtureProtocolSpec.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		759E69302107040B000F7F8F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				759E693121070411000F7F8F /* Fakery */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		759E693121070411000F7F8F /* Fakery */ = {
-			isa = PBXGroup;
-			children = (
-				759E6932210705A2000F7F8F /* FakerSpec.swift */,
-			);
-			path = Fakery;
 			sourceTree = "<group>";
 		};
 		75B70FE020FB2C51007242EF = {
@@ -156,7 +120,6 @@
 		75B70FEC20FB2C51007242EF /* WhatToWearCommonTesting */ = {
 			isa = PBXGroup;
 			children = (
-				759E692B21070391000F7F8F /* Extensions */,
 				75B7100E20FB2EDD007242EF /* Protocols */,
 				75B7100420FB2C9D007242EF /* Supporting Files */,
 			);
@@ -202,7 +165,6 @@
 		75B7101320FB3208007242EF /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				759E69302107040B000F7F8F /* Extensions */,
 				759E692F21070405000F7F8F /* Protocols */,
 			);
 			path = Specs;
@@ -405,14 +367,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WhatToWearCommonTestingTests/Pods-WhatToWearCommonTestingTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/WhatToWearCommonCore/WhatToWearCommonCore.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Fakery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WhatToWearCommonCore.framework",
@@ -449,7 +409,6 @@
 			files = (
 				75B7101120FB2F71007242EF /* FixtureProtocol.swift in Sources */,
 				75B7101220FB2F71007242EF /* Fixturable.swift in Sources */,
-				759E692E210703E0000F7F8F /* Faker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +416,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				759E6933210705A2000F7F8F /* FakerSpec.swift in Sources */,
 				75B7101520FB321A007242EF /* FixtureProtocolSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

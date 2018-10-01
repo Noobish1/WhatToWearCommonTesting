@@ -1,20 +1,17 @@
 PODS:
-  - Fakery (3.3.0)
   - Nimble (7.1.1)
   - Quick (1.3.0)
   - SwiftLint (0.26.0)
-  - WhatToWearCommonCore (1.7.0)
+  - WhatToWearCommonCore (1.9.0)
 
 DEPENDENCIES:
-  - Fakery (= 3.3.0)
   - Nimble (= 7.1.1)
   - Quick (= 1.3.0)
   - SwiftLint (= 0.26.0)
-  - "WhatToWearCommonCore (from `git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git`, tag `1.7.0`)"
+  - "WhatToWearCommonCore (from `git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git`, tag `1.9.0`)"
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - Fakery
     - Nimble
     - Quick
     - SwiftLint
@@ -22,20 +19,19 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   WhatToWearCommonCore:
     :git: "git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git"
-    :tag: 1.7.0
+    :tag: 1.9.0
 
 CHECKOUT OPTIONS:
   WhatToWearCommonCore:
     :git: "git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git"
-    :tag: 1.7.0
+    :tag: 1.9.0
 
 SPEC CHECKSUMS:
-  Fakery: 3aae11a87721c807c18c6456500d088c1230d3e5
   Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
-  WhatToWearCommonCore: 7bad2cb77228e148c0ba254a82e20c165c147332
+  WhatToWearCommonCore: 5e44c6a648ad575945f2c6bd74585bed01b73b84
 
-PODFILE CHECKSUM: 3c09a6f409f3893d676abd2864a9f4fddbb3d763
+PODFILE CHECKSUM: f9ba27da191cc8580afb1983f3a07edd254174a8
 
 COCOAPODS: 1.5.3
