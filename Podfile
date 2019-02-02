@@ -1,10 +1,10 @@
-source 'git@bitbucket.org:BlairMcArthur/whattowearspecs.git'
+source 'git@github.com:Noobish1/whattowearspecs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
 target 'WhatToWearCommonTesting' do
-    pod 'WhatToWearCommonCore', :git => 'git@bitbucket.org:BlairMcArthur/whattowearcommoncore.git', :tag => '1.9.0'
+    pod 'WhatToWearCommonCore', :git => 'git@github.com:Noobish1/whattowearcommoncore.git', :tag => '1.16.0'
     
     # Debug pods
     pod 'SwiftLint', '0.26.0', :configurations => 'Debug'
