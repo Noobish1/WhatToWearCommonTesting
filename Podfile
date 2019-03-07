@@ -4,8 +4,6 @@ platform :ios, '10.0'
 use_frameworks!
 
 target 'WhatToWearCommonTesting' do
-    pod 'WhatToWearCommonCore', :git => 'git@github.com:Noobish1/whattowearcommoncore.git', :tag => '1.16.0'
-    
     # Debug pods
     pod 'SwiftLint', '0.26.0', :configurations => 'Debug'
     

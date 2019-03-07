@@ -2,13 +2,11 @@ PODS:
   - Nimble (7.1.1)
   - Quick (1.3.0)
   - SwiftLint (0.26.0)
-  - WhatToWearCommonCore (1.16.0)
 
 DEPENDENCIES:
   - Nimble (= 7.1.1)
   - Quick (= 1.3.0)
   - SwiftLint (= 0.26.0)
-  - "WhatToWearCommonCore (from `git@github.com:Noobish1/whattowearcommoncore.git`, tag `1.16.0`)"
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -16,22 +14,11 @@ SPEC REPOS:
     - Quick
     - SwiftLint
 
-EXTERNAL SOURCES:
-  WhatToWearCommonCore:
-    :git: "git@github.com:Noobish1/whattowearcommoncore.git"
-    :tag: 1.16.0
-
-CHECKOUT OPTIONS:
-  WhatToWearCommonCore:
-    :git: "git@github.com:Noobish1/whattowearcommoncore.git"
-    :tag: 1.16.0
-
 SPEC CHECKSUMS:
   Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
   SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
-  WhatToWearCommonCore: 2732e0397aeedad64760eaaab61df6dcb466fd0c
 
-PODFILE CHECKSUM: 25f7d7c3bfd3df747873f435209647fbfbe8427d
+PODFILE CHECKSUM: 7efa10ca3ef4f45f5c9f985fa80520bda496bcdb
 
 COCOAPODS: 1.5.3

@@ -25,13 +25,15 @@ internal final class FixtureProtocolSpec: QuickSpec {
             
             describe("its object for bundle") {
                 var fixture: TestFixture!
+                var decoder: JSONDecoder!
                 
                 beforeEach {
                     fixture = .validPath
+                    decoder = JSONDecoder()
                 }
                 
                 it("should return an object of the enclosing type for the given fixture") {
-                    expect(try! fixture.object(for: bundle)).toNot(beNil())
+                    expect(try! fixture.object(for: bundle, decoder: decoder)).toNot(beNil())
                 }
             }
             
