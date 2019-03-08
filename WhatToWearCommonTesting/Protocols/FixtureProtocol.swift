@@ -9,7 +9,7 @@ public protocol FixtureProtocol: RawRepresentable where RawValue == String {
 
 public extension FixtureProtocol {
     // MARK: objects
-    public func object(for bundle: Bundle, decoder: JSONDecoder) throws -> EnclosingType {
+    public func object(for bundle: Bundle, decoder: JSONDecoder = .init()) throws -> EnclosingType {
         let data = try fixtureData(for: bundle)
         
         return try decoder.decode(EnclosingType.self, from: data)
