@@ -7,57 +7,44 @@ private struct BasicModel: Codable {
     let lastName: String
 }
 
-private enum TestFixture: String, FixtureProtocol {
-    typealias EnclosingType = BasicModel
-    
-    case badPath = "not-a-file"
-    case validPath = "basic-model"
+extension BasicModel: Fixturable {
+    fileprivate enum Fixtures: FixtureProtocol {
+        typealias EnclosingType = BasicModel
+        
+        case validPath
+        
+        fileprivate var url: URL {
+            switch self {
+                case .validPath: return R.file.basicModelJson()!
+            }
+        }
+    }
 }
 
 internal final class FixtureProtocolSpec: QuickSpec {
     internal override func spec() {
         describe("FixtureProtocol") {
-            var bundle: Bundle!
-            
-            beforeEach {
-                bundle = Bundle(for: type(of: self))
-            }
-            
             describe("its object for bundle") {
-                var fixture: TestFixture!
+                var fixture: BasicModel.Fixtures!
                 
                 beforeEach {
-                    fixture = .validPath
+                    fixture = BasicModel.fixtures.validPath
                 }
                 
                 it("should return an object of the enclosing type for the given fixture") {
-                    expect(try! fixture.object(for: bundle)).toNot(beNil())
+                    expect(try! fixture.object()).toNot(beNil())
                 }
             }
             
-            describe("its fixtureData for bundle") {
-                var fixture: TestFixture!
+            describe("its fixtureData") {
+                var fixture: BasicModel.Fixtures!
                 
-                context("when a path for the given resource cannot be found") {
-                    beforeEach {
-                        fixture = .badPath
-                    }
-                    
-                    it("should fatalError") {
-                        expect(expression: {
-                            _ = try! fixture.fixtureData(for: bundle)
-                        }).to(throwAssertion())
-                    }
+                beforeEach {
+                    fixture = BasicModel.fixtures.validPath
                 }
                 
-                context("when a path for the given resource can be found") {
-                    beforeEach {
-                        fixture = .validPath
-                    }
-                    
-                    it("should the data for that resource") {
-                        expect(try! fixture.fixtureData(for: bundle)).toNot(beNil())
-                    }
+                it("should the data for that resource") {
+                    expect(try! fixture.fixtureData()).toNot(beNil())
                 }
             }
         }

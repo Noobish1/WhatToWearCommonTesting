@@ -162,6 +162,7 @@
 		75B70FF720FB2C52007242EF /* WhatToWearCommonTestingTests */ = {
 			isa = PBXGroup;
 			children = (
+				75CEFCD5224F669A000C5EC1 /* Generated */,
 				75B7101620FB34A4007242EF /* Example Data */,
 				75B7101320FB3208007242EF /* Specs */,
 				75B7100520FB2CBB007242EF /* Supporting Files */,
@@ -321,6 +322,7 @@
 			buildConfigurationList = 75B7100120FB2C52007242EF /* Build configuration list for PBXNativeTarget "WhatToWearCommonTestingTests" */;
 			buildPhases = (
 				19C03291D1893577B7E5A226 /* [CP] Check Pods Manifest.lock */,
+				75CEFCC3224F604C000C5EC1 /* R.swift */,
 				75B70FEF20FB2C52007242EF /* Sources */,
 				75B70FF020FB2C52007242EF /* Frameworks */,
 				75B70FF120FB2C52007242EF /* Resources */,
