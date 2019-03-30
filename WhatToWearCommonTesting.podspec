@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                      = "WhatToWearCommonTesting"
-    s.version                   = "1.6.0"
+    s.version                   = "1.7.0"
     s.summary                   = "Common testing files for both WhatToWear and WhatToWearBackend"
     s.homepage                  = "https://github.com/Noobish1/whattowearcommontesting"
     s.license                   = 'MIT'
@@ -11,5 +11,4 @@ Pod::Spec.new do |s|
     s.source_files              = "WhatToWearCommonTesting/**/*.swift"
     s.module_name               = "WhatToWearCommonTesting"
     s.swift_version             = '4.2'
-    s.dependency "WhatToWearCommonCore"
 end
