@@ -9,22 +9,20 @@ target 'WhatToWearCommonTesting' do
     
     target 'WhatToWearCommonTestingTests' do
         inherit! :search_paths
-        pod 'Quick', '1.3.0'
-        pod 'Nimble', '7.1.1'
+        pod 'Quick', '2.0.0'
+        pod 'Nimble', '8.0.1'
+        pod 'R.swift', '5.0.2'
     end
 end
 
+target 'Example' do
+    pod 'R.swift', '5.0.2'
+end
+
 post_install do | installer |
-    # Set swift versions on pods
-    updated_pods = ['WhatToWearCommonCore']
-    
     installer.pods_project.targets.each do |target|
         target.build_configurations.each do |config|
-            if updated_pods.include? target.name
-                config.build_settings['SWIFT_VERSION'] = '4.2'
-            else
-                config.build_settings['SWIFT_VERSION'] = '4.0'
-            end
+            config.build_settings['SWIFT_VERSION'] = '4.2'
         end
     end
 end
