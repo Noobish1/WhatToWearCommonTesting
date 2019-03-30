@@ -1,5 +1,7 @@
 import Quick
 import Nimble
+import Rswift
+import Foundation
 @testable import WhatToWearCommonTesting
 
 private struct BasicModel: Codable {
@@ -23,7 +25,7 @@ extension BasicModel: Fixturable {
 
 internal final class FixtureProtocolSpec: QuickSpec {
     internal override func spec() {
-        describe("FixtureProtocol") {
+        describe("FixtureProtocol") {            
             describe("its object for bundle") {
                 var fixture: BasicModel.Fixtures!
                 
