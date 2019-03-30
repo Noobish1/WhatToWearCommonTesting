@@ -25,7 +25,14 @@ extension BasicModel: Fixturable {
 
 internal final class FixtureProtocolSpec: QuickSpec {
     internal override func spec() {
-        describe("FixtureProtocol") {            
+        describe("FixtureProtocol") {
+            beforeSuite {
+                // For some crazy reason we need this otherwise we get
+                // dyld: Library not loaded: @rpath/libswiftSwiftOnoneSupport.dylib
+                // https://stackoverflow.com/a/53654879/9171684
+                print()
+            }
+            
             describe("its object for bundle") {
                 var fixture: BasicModel.Fixtures!
                 
