@@ -9,7 +9,7 @@ public protocol FixtureProtocol {
     func object(decoder: JSONDecoder) throws -> EnclosingType
 }
 
-public extension FixtureProtocol {
+extension FixtureProtocol {
     // MARK: objects
     public func object(decoder: JSONDecoder = .init()) throws -> EnclosingType {
         let data = try fixtureData()

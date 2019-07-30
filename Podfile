@@ -5,7 +5,7 @@ use_frameworks!
 
 target 'WhatToWearCommonTesting' do
     # Debug pods
-    pod 'SwiftLint', '0.26.0', :configurations => 'Debug'
+    pod 'SwiftLint', '0.32.0', :configurations => 'Debug'
     
     target 'WhatToWearCommonTestingTests' do
         inherit! :search_paths
