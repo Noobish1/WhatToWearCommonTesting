@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
     s.license                   = 'MIT'
     s.author                    = { "Blair McArthur" => "blair.mcarthur@icloud.com" }
     s.platform                  = :ios, '10.0'
-    s.source                    = { :git => "git@github.com:Noobish1/whattowearcommontesting.git", :tag => s.version.to_s }
+    s.source                    = { :git => "https://github.com/Noobish1/whattowearcommontesting.git", :tag => s.version.to_s }
     s.requires_arc              = true
     s.source_files              = "WhatToWearCommonTesting/**/*.swift"
     s.module_name               = "WhatToWearCommonTesting"
